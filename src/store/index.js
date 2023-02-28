@@ -9,7 +9,7 @@ export const initialState = {
     errors:{nameError:false,emailError:false,phoneError:false},
     step:1,
     isFinished: false,
-    plan:{option:"Arcade",value:0},
+    plan:{option:"Arcade",value:9},
     addon: { 'Online Service': 0, 'Larger storage': 0, 'Customizable-Profile':0},
     
     
