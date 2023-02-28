@@ -1,0 +1,43 @@
+.addons-label p {
+    color: var(--cool-gray);
+}
+
+/* checbox */
+.addon {
+    cursor: pointer;
+    font-weight: 500;
+    user-select: none;
+}
+
+.addon:active,
+.addon:hover {
+    border-color: var(--purplish-blue);
+}
+
+.addon:active .addons-price,
+.addon:hover .addons-price {
+    color: var(--purplish-blue);
+}
+
+.addon.selected {
+    background-color: #F8F9FE;
+    border-color: var(--purplish-blue);
+}
+
+.addon.selected .addons-price {
+    color: var(--purplish-blue);
+}
+
+@media screen and (max-width:600px){
+    .addons-label p {
+        font-size: .875rem;
+            color: var(--cool-gray);
+        }
+   
+        /* checbox */
+        .addon {
+            cursor: pointer;
+            font-weight: 500;
+            user-select: none;
+        }
+}

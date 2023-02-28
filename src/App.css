@@ -1,38 +1,129 @@
-.App {
-  text-align: center;
+:root {
+  --marine-blue: hsl(213, 96%, 18%);
+  --purplish-blue: hsl(243, 100%, 62%);
+  --pastel-blue: hsl(228, 100%, 84%);
+  --light-blue: hsl(206, 94%, 87%);
+  --strawberry-red: hsl(354, 84%, 57%);
+  --cool-gray: hsl(231, 11%, 63%);
+  --light-gray: hsl(229, 24%, 87%);
+  --magnolia: hsl(217, 100%, 97%);
+  --alabaster: hsl(231, 100%, 99%);
+  --white: hsl(0, 0%, 100%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#root,
+html,
+body {
+height: 100%;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: var(--magnolia);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p {
+  font-size: 16px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* app styles */
+
+.form__wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 940px;
+  height: 600px;
+  padding: 16px;
+  background-color: var(--white);
+  border-radius: 10px;
+}
+
+.form {
+  display: flex;
+  height: 100%;
+}
+
+.main {
+  position: relative; /*need to center thank you page*/  
+  flex: 1;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  color: var(--marine-blue);
+  font-size: 1rem;
+  padding: 44px 84px 16px 96px;
+
 }
 
-.App-link {
-  color: #61dafb;
+.main-title {
+  font-size: 1.625rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--marine-blue);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.main-desc {
+  color: var(--cool-gray);
+  line-height: 23px;
+  margin-bottom: 24px;
+}
+
+/* main content */
+
+@media screen and (max-width: 600px) {
+
+  .form__wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 0px;   
+    background-color: var(--magnolia);
+
+    position: static;
+      top: 0;
+      left: 0;
+      transform: translate(0%, 0%);
+     
+      border-radius: 0px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .form {
+    flex-direction: column;
+    width: 100%;
+      height: 100%;
+    
   }
+  .main {
+   
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   height: 100%;
+   width: 100% ;
+    margin: 0 ;
+    padding: 0;
+    z-index: 99;
+    
+    /* background-color: transparent; */
+    border-radius: 0px;
+    
+  }
+    .main-top {
+      position: absolute;
+        top: -73px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: calc(100% - 16px);
+      background-color: #fff;
+      margin:0px;      
+      padding: 30px 25px 25px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      border-radius: 15px;
+    }
+
+  
 }

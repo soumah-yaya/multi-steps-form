@@ -1,0 +1,33 @@
+.icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 44px;
+}
+
+.detail {
+    color: var(--cool-gray);
+}
+
+.detail p {
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: var(--marine-blue);
+}
+
+.free-months {
+    display: block;
+    font-weight: 500;
+    color: var(--marine-blue);
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    .icon {
+        float: left;
+        width: 40px;
+        height: 40px;
+        margin-bottom:20px;
+        margin-right: 16px;
+       
+    }
+}

@@ -1,0 +1,64 @@
+/* finish up */
+.review-wrapper {
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #F8F9FE;
+    user-select: none;
+    margin-bottom: 10px;
+}
+
+.separator {
+    background-color: #E7E8ED;
+    height: 1px;
+    margin: 20px 0px;
+}
+
+div.review-arcacde {
+    display: flex;
+    align-items: center;
+    color: var(--marine-blue);
+    font-weight: 700;
+}
+
+.review-link {
+    font-weight: normal;
+    color: #A9A9B1;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.review-link:active,
+.review-link:hover {
+    color: var(--purplish-blue);
+    text-decoration: underline;
+}
+
+.review {
+    color: #A9A9B1;
+    margin-bottom: 10px;
+
+}
+
+.review-price {
+    margin-left: auto;
+}
+
+.review p>span {
+    color: var(--marine-blue);
+    float: right;
+    font-weight: 500;
+}
+
+.review-total {
+    display: flex;
+    padding: 20px;
+    color: #A9A9B1;
+}
+
+.review-total span {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--purplish-blue);
+    margin-left: auto;
+}

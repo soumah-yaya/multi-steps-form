@@ -1,0 +1,48 @@
+
+.options-items {
+    display: flex;
+    gap: 20px;
+}
+
+.options-items>div {
+    flex: 1;
+    padding: 16px;
+    border: 1px solid var(--cool-gray);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.options-items>div.selected {
+    border: 1px solid #847FB8;
+    background-color: #F8F9FE;
+}
+.options-items>div:active,
+.options-items>div:hover {
+    border-color:#847FB8;
+}
+
+@media screen and (max-width: 600px) {
+    .options-items {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+    
+        .options-items>div {
+            flex: 1;
+            padding: 16px;
+            border: 1px solid var(--cool-gray);
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    
+        .options-items>div.selected {
+            border: 1px solid #847FB8;
+            background-color: #F8F9FE;
+        }
+    
+        .options-items>div:active,
+        .options-items>div:hover {
+            border-color: #847FB8;
+        }
+}

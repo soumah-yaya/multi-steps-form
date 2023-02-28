@@ -1,0 +1,81 @@
+/* button group */
+.btn-wrapper {
+
+    display: flex;
+    flex-basis: 20%;
+}
+
+.btn {
+    display: flex;
+    justify-content: flex-end;
+    align-self: flex-end;
+    width: 100%;
+
+}
+
+.btn button {
+    font-size: 1rem;
+    padding: 16px 30px;
+    background-color: var(--marine-blue);
+    border-radius: 10px;
+    color: var(--white);
+    font-weight: 500;
+}
+
+.btn button:active,
+.btn button:hover {
+    background-color: #174A8A;
+}
+
+.btn .go-back-btn {
+    color: var(--cool-gray);
+    background-color: transparent;
+    font-weight: 700;
+    margin-right: auto;
+}
+
+.btn .go-back-btn:active,
+.btn .go-back-btn:hover {
+    color: var(--marine-blue);
+    background-color: transparent;
+
+}
+
+.btn .confirm {
+    background-color: var(--purplish-blue);
+}
+
+.btn .confirm:active,
+.btn .confirm:hover {
+    background-color: #938CFE;
+}
+
+@media screen and (max-width: 600px) {
+    .btn-wrapper {
+       width: 100%;       
+        display: flex;
+        margin-top: auto;       
+        padding: 16px;
+       flex-basis: 0;
+        background-color: #fff;
+    }
+
+    .btn {
+        display: flex;
+        justify-content: flex-end;
+        align-self: flex-end;
+        width: 100%;
+
+    }
+        .btn button {
+           font-size: .875rem;
+            padding: 14px 25px;
+            background-color: var(--marine-blue);
+            border-radius: 5px;
+            
+        }
+        .btn .go-back-btn {
+            text-align: left;
+            padding: 14px 18px 16px 0;
+        }
+}

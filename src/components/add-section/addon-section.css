@@ -1,0 +1,31 @@
+.addon {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--cool-gray);
+    margin-bottom: 16px;
+    padding: 20px 24px;
+    border-radius: 10px;
+}
+
+.addons-price {
+    margin-left: auto;
+}
+
+.addons-chkbox {
+    margin-right: 25px;
+}
+
+@media screen and (max-width:600px) {
+    .addon {
+        padding: 12px;
+        letter-spacing: -0.2px;
+    }
+
+    .addons-price {
+        font-size: 14px;
+    }
+
+    .addons-chkbox {
+        margin-right: 14px;
+    }
+}
